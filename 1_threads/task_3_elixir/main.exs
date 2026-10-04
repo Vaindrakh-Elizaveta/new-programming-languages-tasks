@@ -4,7 +4,7 @@ defmodule FrequencyCounter do
   # Run: elixir main.exs
   # Elixir tasks are lightweight BEAM processes scheduled on OS threads.
   def run do
-    tokens = IO.read(:all) |> String.split()
+    tokens = IO.read(:stdio, :eof) |> String.split()
 
     case tokens do
       [] -> :ok

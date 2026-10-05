@@ -1,8 +1,5 @@
 const std = @import("std");
 
-// Input format: one line or text containing brackets and any other characters.
-// Characters other than (), [] and {} are ignored.
-// Compatible with Zig 0.13.x.
 pub fn main() !void {
     var general_purpose_allocator = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = general_purpose_allocator.deinit();

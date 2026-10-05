@@ -1,9 +1,6 @@
 import scala.io.Source
 
 object Main {
-  // Input format: rows columns followed by rows * columns positive costs.
-  // Compile: scalac Main.scala
-  // Run: scala Main
   def main(args: Array[String]): Unit = {
     val source = Source.fromInputStream(System.in)
     val input = try source.mkString.trim finally source.close()

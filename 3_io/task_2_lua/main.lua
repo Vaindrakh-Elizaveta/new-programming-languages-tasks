@@ -1,8 +1,3 @@
--- Usage: lua main.lua <input-file>
--- A word is a maximal sequence of non-whitespace characters.
--- The character count includes spaces, punctuation and line-ending characters.
--- UTF-8 code points are counted, not bytes. Lua 5.3 or newer is required.
-
 local path = arg[1] or "input.txt"
 local file, open_error = io.open(path, "rb")
 

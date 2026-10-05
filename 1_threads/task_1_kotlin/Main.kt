@@ -1,13 +1,6 @@
 import java.util.concurrent.Callable
 import java.util.concurrent.Executors
 
-/**
- * Input format: N followed by N integer values.
- * The array is divided between a pool of worker threads.
- * Compile: kotlinc Main.kt -include-runtime -d main.jar
- * Run: java -jar main.jar
- * Values and their sum must fit in a signed 64-bit integer.
- */
 fun main() {
     val tokens = System.`in`.bufferedReader().readText()
         .trim()

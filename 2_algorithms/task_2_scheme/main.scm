@@ -1,7 +1,3 @@
-;; Input format: one line containing a string of distinct characters.
-;; Run as an R7RS Scheme program. For an empty string, one empty
-;; permutation is printed as a blank line.
-
 (import (scheme base)
         (scheme read)
         (scheme write))

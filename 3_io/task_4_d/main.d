@@ -8,12 +8,6 @@ struct Student {
     double grade;
 }
 
-// Input format:
-// student_count
-// name;grade
-// ...
-// Grades from 2 to 5 inclusive are accepted. The output file name can be
-// passed as the first command-line argument; the default is students.txt.
 void main(string[] args) {
     enum double minimumGrade = 2.0;
     enum double maximumGrade = 5.0;

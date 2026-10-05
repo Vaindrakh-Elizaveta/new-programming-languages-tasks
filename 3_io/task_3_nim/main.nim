@@ -1,9 +1,6 @@
 import os
 import strutils
 
-# Usage: main [input-file] [even-output-file] [odd-output-file]
-# Defaults: numbers.txt, even.txt and odd.txt.
-# Empty lines are ignored. Invalid lines are reported to STDERR and skipped.
 proc main() =
   let inputPath = if paramCount() >= 1: paramStr(1) else: "numbers.txt"
   let evenPath = if paramCount() >= 2: paramStr(2) else: "even.txt"

@@ -1,11 +1,5 @@
 require "thread"
 
-# Input format:
-# initial_balance thread_count operation_count
-# followed by operation_count lines: deposit amount | withdraw amount
-# Run: ruby main.rb
-# Amounts are non-negative integer currency units.
-# Thread scheduling can affect which withdrawals succeed.
 class BankAccount
   def initialize(initial_balance)
     @balance = initial_balance

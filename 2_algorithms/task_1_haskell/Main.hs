@@ -3,12 +3,6 @@ import Data.Char (isSpace)
 type Position = (Int, Int)
 type Maze = [String]
 
--- Input format:
--- rows columns
--- rows lines containing '.' for a free cell and '#' for a wall
--- start_row start_column
--- finish_row finish_column
--- Coordinates are zero-based.
 main :: IO ()
 main = do
     input <- getContents

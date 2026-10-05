@@ -1,8 +1,4 @@
 defmodule FrequencyCounter do
-  # Input format: N followed by N integer values.
-  # Each chunk is counted by a separate Elixir task.
-  # Run: elixir main.exs
-  # Elixir tasks are lightweight BEAM processes scheduled on OS threads.
   def run do
     tokens = IO.read(:stdio, :eof) |> String.split()
 

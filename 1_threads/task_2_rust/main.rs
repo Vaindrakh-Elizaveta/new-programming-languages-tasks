@@ -1,10 +1,6 @@
 use std::io::{self, Read};
 use std::thread;
 
-// Input format: N followed by N integer values.
-// The program finds the minimum and maximum in parallel chunks.
-// Compile (Rust 1.63+): rustc main.rs -o main
-// Run: ./main (Windows: main.exe)
 fn main() {
     let mut input = String::new();
     io::stdin().read_to_string(&mut input).unwrap();

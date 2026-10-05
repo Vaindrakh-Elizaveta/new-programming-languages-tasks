@@ -1,8 +1,6 @@
 use strict;
 use warnings;
 
-# Enter one number per line. An empty line or end-of-file finishes input.
-# Invalid lines are reported to STDERR and ignored.
 my @numbers;
 
 while (my $line = <STDIN>) {
